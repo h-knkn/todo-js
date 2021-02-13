@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: orange;
+}
+
+.input-area {
+  background-color: yellow;
+}
+
+.incomplete-area {
+  background-color: pink;
+  height: 200px;
+}
+
+.complete-area {
+  background-color: aqua;
+  height: 200px;
+}
