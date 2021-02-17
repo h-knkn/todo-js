@@ -26,6 +26,14 @@ const createIncompleteList = (text) => {
   const li = document.createElement("li");
   li.innerText = text;
 
+  // 一括削除
+  const deleteAllButton = document.getElementById("incomplete-area");
+  deleteAllButton.addEventListener("click", () => {
+    // 子要素を全て削除
+    const element = document.getElementById("incomplete-list");
+    element.textContent = null;
+  });
+
   // 完了buttonタグ生成
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
